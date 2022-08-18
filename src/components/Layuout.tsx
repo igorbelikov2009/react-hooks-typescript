@@ -18,12 +18,16 @@ const Layuout = () => {
             UseEffect
           </Link>
 
+          <Link className="link" to="/ref">
+            UseRef
+          </Link>
+
           <Link className="link" to="/memo">
             UseMemo
           </Link>
 
-          <Link className="link" to="/ref">
-            UseRef
+          <Link className="link" to="/callback">
+            UseCallback
           </Link>
 
           <Link className="link" to="/notpage">

@@ -7,6 +7,7 @@ import Layuout from "./Layuout";
 import UseEffectHook from "../pages/UseEffectHook";
 import UseRefHook from "../pages/UseRefHook";
 import UseMemoHook from "../pages/UseMemoHook";
+import UseCallbackHook from "../pages/UseCallbackHook";
 
 const Navbar = () => {
   return (
@@ -16,9 +17,10 @@ const Navbar = () => {
           <Route index element={<UseState />} />
           <Route path="counters" element={<HomeUseStateCopy />} />
           <Route path="effect" element={<UseEffectHook />} />
-
-          <Route path="memo" element={<UseMemoHook />} />
           <Route path="ref" element={<UseRefHook />} />
+          <Route path="memo" element={<UseMemoHook />} />
+          <Route path="callback" element={<UseCallbackHook />} />
+
           <Route path="notpage" element={<NotFoundPage />} />
         </Route>
       </Routes>

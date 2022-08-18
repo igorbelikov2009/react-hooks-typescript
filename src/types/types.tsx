@@ -45,3 +45,15 @@ export interface IPosts {
 export interface IColored {
   color: string;
 }
+
+export interface ItemsListProps {
+  getItems: any;
+}
+
+// export interface IItems {
+//   items: number[];
+// }
+
+// export interface IItem {
+//   item: number;
+// }

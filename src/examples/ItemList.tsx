@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-
-interface ItemsListProps {
-  getItems: any;
-}
+import { ItemsListProps } from "../types/types";
 
 const ItemsList = ({ getItems }: ItemsListProps) => {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState<number[]>([]);
 
   useEffect(() => {
     const newItems = getItems(42);
