@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useCounter } from "../myHooks/useCounter";
 
 //   ===============
 // function computeInitialCounter() {
@@ -6,24 +7,6 @@ import React, { useState } from "react";
 //   return Math.trunc(Math.random() * 20);
 // }
 //   ===============
-
-function useCounter(initialValue: number) {
-  const [value, setValue] = useState(initialValue);
-
-  const incrementClobal = () => {
-    setValue((prev) => {
-      return prev + 1;
-    });
-  };
-
-  const decrementClobal = () => {
-    setValue(value - 1);
-  };
-
-  return {
-    bind: { value, incrementClobal, decrementClobal },
-  };
-}
 
 const HomeUseStateCopy = () => {
   const count1 = useCounter(1);

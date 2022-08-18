@@ -7,11 +7,23 @@ const Layuout = () => {
       <div className="navbar">
         <nav className="container bg-info">
           <Link className="link" to="/">
-            Home-State
+            Home-UseState
           </Link>
 
           <Link className="link" to="/counters">
             UseCounters
+          </Link>
+
+          <Link className="link" to="/effect">
+            UseEffect
+          </Link>
+
+          <Link className="link" to="/memo">
+            UseMemo
+          </Link>
+
+          <Link className="link" to="/ref">
+            UseRef
           </Link>
 
           <Link className="link" to="/notpage">
