@@ -15,7 +15,7 @@ const Navbar = () => {
       <Routes>
         <Route path="/" element={<Layuout />}>
           <Route index element={<UseState />} />
-          <Route path="counters" element={<HomeUseStateCopy />} />
+          <Route path="stateCopy" element={<HomeUseStateCopy />} />
           <Route path="effect" element={<UseEffectHook />} />
           <Route path="ref" element={<UseRefHook />} />
           <Route path="memo" element={<UseMemoHook />} />

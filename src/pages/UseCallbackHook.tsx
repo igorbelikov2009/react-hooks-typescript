@@ -20,10 +20,10 @@ const UseCallbackHook: FC = () => {
   );
 
   const increase: React.MouseEventHandler<HTMLButtonElement> = () =>
-    setCount((prev) => prev + 1);
+    setCount((prev: number) => prev + 1);
 
   const change: React.MouseEventHandler<HTMLButtonElement> = () =>
-    setColored((prev) => !prev);
+    setColored((prev: boolean) => !prev);
 
   return (
     <div className="container">

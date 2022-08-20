@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useCounter } from "../myHooks/useCounter";
+import { ICountDate } from "../types/types";
 
 //   ===============
 // function computeInitialCounter() {
@@ -15,13 +16,13 @@ const HomeUseStateCopy = () => {
   //     return computeInitialCounter();
   //   });
 
-  const [state, setState] = useState({
+  const [state, setState] = useState<ICountDate>({
     title: "Счётчик",
     date: Date.now(),
   });
 
-  function updateTitle() {
-    setState((prev) => {
+  function updateTitle(): void {
+    setState((prev: ICountDate) => {
       return {
         ...prev,
         title: "Новая запись",

@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useState, useEffect, FC } from "react";
-import { coords, IPosts, ITodos, IUsers } from "../types/types";
+import { ICoords, IPosts, ITodos, IUsers } from "../types/types";
 
 const UseEffectHook: FC = () => {
   const [type, setType] = useState<string>("users");
   const [data, setData] = useState<IUsers[] | ITodos[] | IPosts>([]);
-  const [pos, setPos] = useState<coords>({ x: 0, y: 0 });
+  const [pos, setPos] = useState<ICoords>({ x: 0, y: 0 });
 
   const getData = async () => {
     const response = await axios(

@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import UseStateItem from "../components/UseStateItem";
+import { ICountDate } from "../types/types";
 
 function computeInitialCounter() {
   //   console.log("Some calculations....");
@@ -12,7 +13,7 @@ const UseState: FC = () => {
   });
   //   const [counter, setCounter] = useState(1);
 
-  const [state, setState] = useState({
+  const [state, setState] = useState<ICountDate>({
     title: "Счётчик",
     date: Date.now(),
   });

@@ -15,7 +15,7 @@ export interface IStateCounter {
   };
 }
 
-export interface coords {
+export interface ICoords {
   x: number;
   y: number;
 }
@@ -50,10 +50,7 @@ export interface ItemsListProps {
   getItems: any;
 }
 
-// export interface IItems {
-//   items: number[];
-// }
-
-// export interface IItem {
-//   item: number;
-// }
+export interface ICountDate {
+  title: string;
+  date: number;
+}

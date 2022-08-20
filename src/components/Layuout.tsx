@@ -1,7 +1,8 @@
 import React from "react";
+import { FC } from "react";
 import { Link, Outlet } from "react-router-dom";
 
-const Layuout = () => {
+const Layuout: FC = () => {
   return (
     <section className="container">
       <div className="navbar">
@@ -10,8 +11,8 @@ const Layuout = () => {
             Home-UseState
           </Link>
 
-          <Link className="link" to="/counters">
-            UseCounters
+          <Link className="link" to="/stateCopy">
+            MyHook UseCounters
           </Link>
 
           <Link className="link" to="/effect">

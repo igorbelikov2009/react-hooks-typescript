@@ -23,7 +23,7 @@ const UseStateItem: FC<UseStateItemProps> = (props) => {
       </button>
 
       <button onClick={updateTitle} className="btn btn-light">
-        Изменить
+        Изменить title
       </button>
 
       <pre>{JSON.stringify(state, null, 2)}</pre>
