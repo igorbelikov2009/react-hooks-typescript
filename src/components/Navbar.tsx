@@ -8,6 +8,7 @@ import UseEffectHook from "../pages/UseEffectHook";
 import UseRefHook from "../pages/UseRefHook";
 import UseMemoHook from "../pages/UseMemoHook";
 import UseCallbackHook from "../pages/UseCallbackHook";
+import UseContextHook from "../pages/UseContextHook";
 
 const Navbar = () => {
   return (
@@ -20,6 +21,7 @@ const Navbar = () => {
           <Route path="ref" element={<UseRefHook />} />
           <Route path="memo" element={<UseMemoHook />} />
           <Route path="callback" element={<UseCallbackHook />} />
+          <Route path="context" element={<UseContextHook />} />
 
           <Route path="notpage" element={<NotFoundPage />} />
         </Route>

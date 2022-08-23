@@ -66,20 +66,20 @@ export const FunctionTSX = () => {
   // Например: function pickCard(x: number | { suit: string; card: number }[]): { suit: string; card: number } | number {}
   //   Мы описываем её типы, и важен факт: количество аргументов не изменно. И второе, скольк вариантов у нас оформленно, столько и проверок внутри
   //   вар 1
-  function pickCard(x: number): { suit: string; card: number };
-  //   вар 2
-  function pickCard(x: { suit: string; card: number }[]): number;
-  function pickCard(x): any {
-    // 1-ая проверка
-    if (typeof x === "object") {
-      let pickedCard = Math.floor(Math.random() * x.length);
-      return pickedCard;
-      //   2-ая проверка
-    } else if (typeof x === "number") {
-      return { suit: "", card: x % 13 };
-    }
-  }
-  pickCard(7);
-  pickCard([{ suit: "adc", card: 5 }]);
+  // function pickCard(x: number): { suit: string; card: number };
+  // //   вар 2
+  // function pickCard(x: { suit: string; card: number }[]): number;
+  // function pickCard(x): any {
+  //   // 1-ая проверка
+  //   if (typeof x === "object") {
+  //     let pickedCard = Math.floor(Math.random() * x.length);
+  //     return pickedCard;
+  //     //   2-ая проверка
+  //   } else if (typeof x === "number") {
+  //     return { suit: "", card: x % 13 };
+  //   }
+  // }
+  // pickCard(7);
+  // pickCard([{ suit: "adc", card: 5 }]);
   /**/
 };

@@ -10,27 +10,24 @@ const Layuout: FC = () => {
           <Link className="link" to="/">
             Home-UseState
           </Link>
-
           <Link className="link" to="/stateCopy">
             MyHook UseCounters
           </Link>
-
           <Link className="link" to="/effect">
             UseEffect
           </Link>
-
           <Link className="link" to="/ref">
             UseRef
           </Link>
-
           <Link className="link" to="/memo">
             UseMemo
           </Link>
-
           <Link className="link" to="/callback">
             UseCallback
           </Link>
-
+          <Link className="link" to="/context">
+            UseContext
+          </Link>
           <Link className="link" to="/notpage">
             NotFoundPage
           </Link>
